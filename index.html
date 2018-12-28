@@ -1,0 +1,211 @@
+<!--
+  HTML stands for HyperText Markup Language, so this language (not programming language) is based on *tags* and *attributes*
+-->
+<!--
+  A tag is just a keyword surrounded by the <> symbols. A closing tag is just a tag with a / symbol before the keyword.
+-->
+<!--
+  In most cases, web content is surrounded with a tag and a closing tag and that is how an element is defined
+-->
+<!--
+  There are also a few *self-closing tags*, which are tags that have no content wrapped so there is no need of an opening and closing
+-->
+
+<!DOCTYPE html>
+<!--
+  This must be always the first tag in a HTML document and does not make any change to de loaded page, but is a convention to make the browser recognize all the next lines as HTML code
+-->
+<html>
+  <!--
+    This tag wraps all the content of the page. It commonly have two children: <head> and <body>
+  -->
+  <head>
+    <!--
+      The <head> tag contains important elements that contributes to the page but are not visible in the browser, like meta information and the page title
+    -->
+    <meta charset="UTF-8" />
+    <!--
+      This is one of many meta info a web page can have. This particularly is very important because is telling the browser what character set (charset) to use in order to recognize all the characters like accent marks
+    -->
+    <title>HTML basics</title>
+    <!--
+      The <title> tag defines the page title that can be seen in the browser tab
+    -->
+  </head>
+  <body>
+    <!--
+      The <body> tag wraps all the visible content of a page, all the text and images that the user can see
+    -->
+    <h1>Hello World!</h1>
+    <!--
+      This tag defines a heading in the page. There are six types of headings from <h1> to <h6> in order of relevance and visually are decreasing in size.
+    -->
+    <p>
+      Our world, planet Earth, has been translating around the Sun for over 4.5
+      billion years ago. The surface of this blue planet is about 3/4 covered
+      with water and the rest is land in larger or smaller extensions such as
+      continents or little islands.
+    </p>
+    <!-- the <p> tag stands for paragraph and it is used for common text -->
+    <h2>Hello Venus!</h2>
+    <p>
+      Venus is the closest planet to the Earth and that's why often it can be
+      seen by the human naked eye.
+    </p>
+
+    <h3>Hello Mars!</h3>
+    <p>
+      This planet is the favorite of sci-fi writers as we can see martians in
+      many fiction movies and books. It has a particular red color and it is the
+      actual focus of a potential planet migration in the future.
+    </p>
+
+    <h4>Hello Mercury!</h4>
+    <p>
+      The smallest planet of the Solar System. Also it is the closest planet to
+      the Sun and, therefore, the hottest.
+    </p>
+
+    <h5>Hello Moon!</h5>
+    <p>
+      It's the only Earth's natural satellite. It takes 28 days to orbit the
+      planet and it can be seen generally at night
+    </p>
+
+    <h6>Hello Pluto!</h6>
+    <p>
+      Pluto was considered the ninth planet of the Solar System until the formal
+      definition of "planet" in 2006. Now it is considered a
+      <span>dwarf planet</span>
+    </p>
+    <br />
+    <!-- This is a line break, i.e. leaves a space between elements -->
+    <p>Here is a list of planets in the Solar System, followed by an ilustrative image:</p>
+    <ol>
+      <!--
+        this is a list. It can be defined as an ordered list <ol> with numbered elements or unordered list <ul> with bulleted elements. The list elements are always wrapped by the <ol> or <ul> and are defined by the <li> tag (whether is an ordered or unordered list) and the content is written within
+      -->
+      <li>Mercury</li>
+      <li>Venus</li>
+      <li>Earth</li>
+      <li>Mars</li>
+      <li>Jupiter</li>
+      <li>Saturn</li>
+      <li>Uranus</li>
+      <li>Neptune</li>
+    </ol>
+
+    <img
+      src="https://cdn.inquisitr.com/wp-content/uploads/2018/07/Rogue-star-solar-system.jpg"
+    />
+    <!--
+      The <img/> tag is used for the images. It is a self-closing tag so doesn't need to be closed, only with a / after the keyword. It also need an attribute, in this case "src" that specifies where the image is located. src attribute may receive either absolute or relative paths
+    -->
+    <br />
+    <br />
+    <br />
+    <table>
+      <!--
+        The <table> tag defines the structure of a table. It generally has two children: <thead> and <tbody>
+      -->
+      <thead>
+        <!--
+          The head of the body can be used to indicate titles and names of the columns
+        -->
+        <tr>
+          <!--
+            <tr> represents a table row and it must be used every time a row is added to the table to wrap all the content of the row
+          -->
+          <th colspan="4">Technical information</th>
+          <!--
+            <th> is a cell of the table and there it must be written the number of the column. all table cells can have the colspan attribute that tells the <th> to take n number of columns. A table title can be easily made by setting colspan value to the total of columns
+          -->
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Radius (km)</th>
+          <th>Orbital Period (days)</th>
+          <th># of Satelites</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mercury</td>
+          <!--
+            <td> stands for table data and it defines a normal cell of the table
+          -->
+          <td>2,439.7</td>
+          <td>87.97</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Venus</td>
+          <td>6,051.8</td>
+          <td>224.701</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Earth</td>
+          <td>6371.0</td>
+          <td>365.25</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Mars</td>
+          <td>3389.5</td>
+          <td>686.97</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Jupiter</td>
+          <td>69,911</td>
+          <td>4,332.59</td>
+          <td>79</td>
+        </tr>
+        <tr>
+          <td>Saturn</td>
+          <td>58,232</td>
+          <td>10,759.22</td>
+          <td>62</td>
+        </tr>
+        <tr>
+          <td>Uranus</td>
+          <td>25,362</td>
+          <td>30,688.5</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>Neptune</td>
+          <td>24,622</td>
+          <td>60,182</td>
+          <td>14</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="https://en.wikipedia.org">Source</a>
+    <!--
+      This is a link. the <a> tag receives a href attribute similar to src attribute in <img> that holds the direction to the page to redirect. It also con be a relative or absolute path
+    -->
+
+    <br />
+    <br />
+
+    <p>
+      Fun fact: the planets of the Solar System were named like roman gods. Here
+      is again the list with the corresponding god of each planet:
+    </p>
+    <ul>
+      <li>Mercury: God of messengers, travel, and/or commerce.</li>
+      <li>Venus: Goddess of romance and lust.</li>
+      <li>Mars: God of War.</li>
+      <li>Earth (Terra): Godess of the earth</li>
+      <li>Jupiter: God of the sky and lightning.</li>
+      <li>Saturn: God of Agriculture.</li>
+      <li>Uranus (Caelus): Primordial god of the Sky.</li>
+      <li>Neptune: God of the Sea.</li>
+    </ul>
+  </body>
+</html>
+<!--
+  There are two other basic tags, <div> and <span>, that will be covered in CSS basics
+-->
